@@ -2,9 +2,8 @@ import React from "react";
 import { Button, Checkbox, Form, Input } from "antd";
 
 import { Link } from "react-router-dom";
-import Signup from "./Signup";
 
-const Login = () => {
+const Signup = () => {
   const onFinish = (values) => {
     console.log("Success:", values);
   };
@@ -28,7 +27,7 @@ const Login = () => {
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
-      <h1>Login</h1>
+      <h1>Signup</h1>
       <Form.Item
         label="Username"
         name="username"
@@ -56,6 +55,7 @@ const Login = () => {
       </Form.Item>
 
       <Form.Item
+        className="form-item"
         name="remember"
         valuePropName="checked"
         wrapperCol={{
@@ -63,10 +63,11 @@ const Login = () => {
           span: 16,
         }}
       >
-        <Checkbox id="remember-me">Remember me</Checkbox>
+        <Checkbox>Remember me</Checkbox>
       </Form.Item>
 
       <Form.Item
+        className="form-item"
         wrapperCol={{
           offset: 8,
           span: 16,
@@ -76,18 +77,18 @@ const Login = () => {
           Submit
         </Button>
       </Form.Item>
-      {/* signup link */}
-        <Form.Item
-            wrapperCol={{
-                offset: 8,
-                span: 16,
-            }}
-        > Don't have an account?
-            <Link to="/signup">
-                Signup
-            </Link>
-        </Form.Item>
+      <Form.Item
+        className="form-item"
+        wrapperCol={{
+          offset: 8,
+          span: 16,
+        }}
+      >
+        {" "}
+        Already have an account?
+        <Link to="/login">Login</Link>
+      </Form.Item>
     </Form>
   );
 };
-export default Login;
+export default Signup;
