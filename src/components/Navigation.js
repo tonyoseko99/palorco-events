@@ -3,6 +3,8 @@ import palorco from "../assets/images/palorco.png";
 import { Menu, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 
+import Login from "./Login";
+
 const Navigation = () => (
   <Menu mode="horizontal" className="menu">
     <Menu.Item id="home-item">
@@ -20,7 +22,9 @@ const Navigation = () => (
       <Menu.Item key="five">Events Hosting</Menu.Item>
     </Menu.SubMenu>
     <Menu.Item>
-      <Button type="primary" id="login-btn">Login</Button>
+      <Button type="primary" id="login-btn">
+        
+      </Button>
     </Menu.Item>
   </Menu>
 );
