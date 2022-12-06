@@ -101,3 +101,34 @@
   align-items: center;
   text-align: center;
 }
+
+/* HOME SECTION */
+.background-column {
+  background-image: url("https://images.unsplash.com/photo-1583338917496-7ea264c374ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#cooking-header{
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+}
+
+#lets-get{
+  font-family: 'Roboto', sans-serif;
+  font-size: xx-large;
+}
+
+#cooking-h1{
+  font-size: 10rem;
+  font-weight: lighter !important;
+}
