@@ -25,8 +25,8 @@ const Navigation = () => (
     </Menu.Item>
     <Menu.Item>
         {/* link to signup */}
-        <Link to="/signup">
-            Signup
+        <Link to="/about">
+            About Us
         </Link>
     </Menu.Item>
     <Menu.SubMenu

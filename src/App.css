@@ -115,20 +115,72 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-#cooking-header{
-  font-family: 'Caveat', cursive;
+#cooking-header {
+  font-family: "Caveat", cursive;
   font-size: 3rem;
 }
 
-#lets-get{
-  font-family: 'Roboto', sans-serif;
+#lets-get {
+  font-family: "Roboto", sans-serif;
   font-size: xx-large;
 }
 
-#cooking-h1{
+#cooking-h1 {
   font-size: 10rem;
   font-weight: lighter !important;
+}
+
+/* styling home paragraphs */
+.paragraph-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.p-1 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  color: #e51934;
+}
+
+.p-2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  color: #500d3c;
+}
+
+.p-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.p-3, .p-4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: left;
+  font-weight: lighter;
+  margin: 0 3em 0 0;
+  color: black;
+  width: 50%;
 }
