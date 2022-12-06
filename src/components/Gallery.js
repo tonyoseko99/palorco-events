@@ -5,7 +5,7 @@ function Gallery() {
   return (
     <div>
       <h1>Gallery</h1>
-        <Button type="primary">Button</Button>
+        
     </div>
   );
 }

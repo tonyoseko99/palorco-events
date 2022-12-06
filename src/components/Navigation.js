@@ -1,6 +1,6 @@
 import React from "react";
 import palorco from "../assets/images/palorco.png";
-import { Menu } from "antd";
+import { Menu, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 
 const Navigation = () => (
@@ -8,9 +8,9 @@ const Navigation = () => (
     <Menu.Item id="home-item">
       <img src={palorco} alt="palorco" id="image-logo" />
     </Menu.Item>
-    <Menu.Item >Home</Menu.Item>
-    <Menu.Item >Gallery</Menu.Item>
-    <Menu.Item >About Us</Menu.Item>
+    <Menu.Item>Home</Menu.Item>
+    <Menu.Item>Gallery</Menu.Item>
+    <Menu.Item>About Us</Menu.Item>
     <Menu.SubMenu
       key="SubMenu"
       title="Palorco Services"
@@ -19,6 +19,9 @@ const Navigation = () => (
       <Menu.Item key="four">Catering</Menu.Item>
       <Menu.Item key="five">Events Hosting</Menu.Item>
     </Menu.SubMenu>
+    <Menu.Item>
+      <Button type="primary" id="login-btn">Login</Button>
+    </Menu.Item>
   </Menu>
 );
 
