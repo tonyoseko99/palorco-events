@@ -1,27 +1,23 @@
-import React from 'react';
-import { Menu } from 'antd';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
+import React from "react";
+import palorco from "../assets/images/palorco.png";
+import { Menu } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 
 const Navigation = () => (
-  <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
-    <Menu.Item key="mail" icon={<MailOutlined />}>
-      Navigation One
+  <Menu mode="horizontal" className="menu">
+    <Menu.Item id="home-item">
+      <img src={palorco} alt="palorco" id="image-logo" />
     </Menu.Item>
-    <Menu.SubMenu key="SubMenu" title="Navigation Two - Submenu" icon={<SettingOutlined />}>
-      <Menu.Item key="two" icon={<AppstoreOutlined />}>
-        Navigation Two
-      </Menu.Item>
-      <Menu.Item key="three" icon={<AppstoreOutlined />}>
-        Navigation Three
-      </Menu.Item>
-      <Menu.ItemGroup title="Item Group">
-        <Menu.Item key="four" icon={<AppstoreOutlined />}>
-          Navigation Four
-        </Menu.Item>
-        <Menu.Item key="five" icon={<AppstoreOutlined />}>
-          Navigation Five
-        </Menu.Item>
-      </Menu.ItemGroup>
+    <Menu.Item >Home</Menu.Item>
+    <Menu.Item >Gallery</Menu.Item>
+    <Menu.Item >About Us</Menu.Item>
+    <Menu.SubMenu
+      key="SubMenu"
+      title="Palorco Services"
+      icon={<DownOutlined />}
+    >
+      <Menu.Item key="four">Catering</Menu.Item>
+      <Menu.Item key="five">Events Hosting</Menu.Item>
     </Menu.SubMenu>
   </Menu>
 );
