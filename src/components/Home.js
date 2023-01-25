@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "antd";
+import { Col, Divider, Row } from "antd";
 const Home = () => (
   <>
     <Row>
@@ -16,6 +16,7 @@ const Home = () => (
       <Row justify="center"className="paragraph-section" >
         <Col span={16}>
           <p className="p-1">People buy experiences and not products.</p>
+          <Divider />
           <p className="p-2">
             We are here to provide you with the best experience. Your experience
             is our priority. Your event deserves the best.
