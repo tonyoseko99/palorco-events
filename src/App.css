@@ -41,12 +41,12 @@
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: fit-content;
   font-size: larger;
-  padding: 0 200px;
+  background: linear-gradient(90deg, #c0c0c0 0%, #e9f7ff 100%);
 }
 
 /* image logo */
@@ -57,49 +57,6 @@
   font-size: 50px !important;
   font-weight: bold;
   margin-left: 20px;
-}
-
-/* login-btn */
-#login-btn {
-  position: relative;
-  left: 25em;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-/* login-form */
-.login-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* form-item */
-.form-item {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 /* HOME SECTION */
@@ -147,10 +104,10 @@
 .p-1 {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
-  text-align: left;
+  text-align: center;
   font-size: 3rem;
   font-weight: lighter;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: #e51934;
 }
@@ -159,9 +116,9 @@
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.5rem;
   line-height: 1.4;
-  text-align: left;
+  text-align: center;
   font-weight: lighter;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: #500d3c;
 }
@@ -175,15 +132,14 @@
   padding: 0;
 }
 
-.p-3, .p-4 {
+.p-3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
   text-align: left;
   font-weight: lighter;
-  margin: 0 3em 0 0;
+  margin: 0 auto;
   color: black;
-  width: 50%;
 }
 
 /* footer */
@@ -202,7 +158,7 @@
   font-weight: lighter;
 }
 
-.footer h2{
+.footer h2 {
   font-size: 1.3rem;
   font-weight: lighter;
 }
@@ -227,9 +183,7 @@
   margin: 0 0.4em;
 }
 
-#copyright{
+#copyright {
   color: lightgray;
   font-size: 1rem;
 }
-
-
